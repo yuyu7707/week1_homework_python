@@ -9,7 +9,7 @@
 """
 
 
-class Yasai:
+class Vegetable:
     def __init__(
         self,
         name,
@@ -32,13 +32,13 @@ class Yasai:
             print(f"{self.name}はまだ収穫できません")
 
 
-yasais = [Yasai("トマト", 30), Yasai("ナス", 25)]
-for yasai in yasais:
-    yasai.day_count(20)
-    yasai.check_day()
-    yasai.check_harvest()
+vegetables = [Vegetable("トマト", 30), Vegetable("ナス", 25)]
+for vegetable in vegetables:
+    vegetable.day_count(20)
+    vegetable.check_day()
+    vegetable.check_harvest()
 
-for yasai in yasais:
-    yasai.day_count(5)
-    yasai.check_day()
-    yasai.check_harvest()
+for vegetable in vegetables:
+    vegetable.day_count(5)
+    vegetable.check_day()
+    vegetable.check_harvest()
