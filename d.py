@@ -35,7 +35,7 @@ while True:
 
     vegita.punch(gokuu)
     if gokuu.hp == 0:
-        print(f"{gokuu.name}は倒れた! {vegita.name}の勝利！")
+        print(f"{gokuu.name}は倒れた! {vegita.name}の勝利!")
         break
 
     turn += 1

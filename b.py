@@ -1,24 +1,24 @@
-name = input("氏名")
-berth = input("西暦/月/日")
+name = input("氏名:")
+birthday = input("西暦/月/日:")
 
-year, month, day = berth.split("/")  
+year, month, day = birthday.split("/")
 count = 0
-for moji in name:
-    if moji.isalnum():
+for char in name:
+    if char.isalnum():
         count += 1
 
 total = count + int(year) + int(month) + int(day)
 
 if total % 6 == 0:
-    unsei = "大吉"
+    fortune = "大吉"
 
 elif total % 3 == 0:
-    unsei = "中吉"   
+    fortune = "中吉"
 
-elif total  % 2 == 0:
-    unsei = "吉"    
+elif total % 2 == 0:
+    fortune = "吉"
 
 else:
-    unsei = "凶"
+    fortune = "凶"
 
-print(name + "さんの運勢：" + unsei)
+print(f"{name}さんの運勢: {fortune}")
